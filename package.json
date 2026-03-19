@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Test repo for npm provenance CI",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/0xM3R/provenance-ci-test"
+  },
   "scripts": {
     "test": "echo \"ok\""
   },
