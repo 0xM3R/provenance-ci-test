@@ -1,0 +1,18 @@
+name: Release to npm
+on:
+  workflow_dispatch:
+    inputs:
+      bump:
+        description: Version bump type
+        required: true
+        type: choice
+        options: [patch, minor, major]
+permissions:
+  contents: write
+jobs:
+  release:
+    uses: ./.github/workflows/public-publish.yml
+    with:
+      bump: ${{ inputs.bump }}
+    secrets:
+      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
