@@ -1,6 +1,6 @@
 {
   "name": "@0xm3r/provenance-ci-test",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Test repo for npm provenance CI",
   "main": "index.js",
   "repository": {
