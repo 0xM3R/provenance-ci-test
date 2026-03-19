@@ -9,6 +9,7 @@ on:
         options: [patch, minor, major]
 permissions:
   contents: write
+  id-token: write
 jobs:
   release:
     uses: ./.github/workflows/public-publish.yml
